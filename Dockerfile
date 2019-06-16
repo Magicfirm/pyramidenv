@@ -7,7 +7,7 @@ MAINTAINER JIN TAO <jeffkyjin@magicfirm.com>
 
 # Install htop.
 RUN apt-get update && \
-    apt-get -y install htop
+    apt-get install -y htop
 
 COPY requirements.txt /tmp
 WORKDIR /tmp
