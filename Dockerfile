@@ -5,6 +5,9 @@
 FROM python:3.6
 MAINTAINER JIN TAO <jeffkyjin@magicfirm.com>
 
+# Install htop.
+RUN apt-get update && \
+    apt-get -y install htop
 
 COPY requirements.txt /tmp
 WORKDIR /tmp
