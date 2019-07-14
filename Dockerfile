@@ -9,3 +9,5 @@ COPY requirements.txt /tmp
 WORKDIR /tmp
 RUN pip install -r requirements.txt
 
+# setting timezone
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
